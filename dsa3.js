@@ -51,3 +51,42 @@ const prompt = require("prompt-sync")();
 
 // let n = Number(prompt("enter a number: "));
 // console.log(factorial(n))
+
+
+// factors of a number n
+
+// function getFactors(n) {
+//     let factors = []
+//     for(let i = 1; i <= n; i++){
+//         if(n%i == 0){
+//             factors.push(i)
+//         }
+//     }
+//     return factors
+// }
+
+// const n = Number(prompt("enter a number to get their factors: "))
+// console.log(getFactors(n))
+
+
+// prime numbers 
+
+
+function getFactors(n) {
+    let factors = []
+    for(let i = 2; i < n; i++){
+        if(n%i == 0){
+            factors.push(i)
+        }
+    }
+    return factors
+}
+
+const n = Number(prompt("enter a number to get their factors: "))
+let factors = getFactors(n)
+
+if(factors.length == 0){
+    console.log(`${n} is a prime number`)
+}else{
+    console.log(`${n} is not a prime number`)
+}
