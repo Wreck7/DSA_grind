@@ -28,4 +28,46 @@ const prompt = require("prompt-sync")();
 
 
 
-// 
+// max element from an array!
+
+// let arr = [1,11,2,22,3,33,4,5]
+
+// function getLargest(arr) {
+//     let largestNum;
+//     for (let i = 0; i < arr.length; i++) {
+//         if(largestNum === undefined || largestNum < arr[i]){
+//             largestNum = arr[i]
+//         }else{
+//             largestNum = largestNum
+//         }
+//     }
+//     return largestNum;
+// }
+
+// console.log(getLargest(arr))
+
+
+
+
+
+// second max element from an array!
+
+
+// let arr = [1,11,2,22,3,33,4,5]
+
+// function getLargest(arr) {
+//     let largestNum;
+//     for (let i = 0; i < arr.length; i++) {
+//         if(largestNum === undefined || largestNum < arr[i]){
+//             largestNum = arr[i]
+//         }else{
+//             largestNum = largestNum
+//         }
+//     }
+//     return largestNum;
+// }
+
+// let maxNum = getLargest(arr)
+// arr.splice(arr.indexOf(maxNum),1)
+
+// console.log(getLargest(arr))
