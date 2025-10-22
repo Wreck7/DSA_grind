@@ -14,8 +14,6 @@ const prompt = require("prompt-sync")();
 // addItem();
 // console.log(arr);
 
-
-
 // sum of the numbers!
 
 // let arr = [1, 2, 3, 4, 5, 8];
@@ -25,8 +23,6 @@ const prompt = require("prompt-sync")();
 // }
 
 // console.log(add);
-
-
 
 // max element from an array!
 
@@ -46,12 +42,7 @@ const prompt = require("prompt-sync")();
 
 // console.log(getLargest(arr))
 
-
-
-
-
 // second max element from an array!
-
 
 // let arr = [1,11,2,22,3,33,4,5]
 
@@ -71,3 +62,17 @@ const prompt = require("prompt-sync")();
 // arr.splice(arr.indexOf(maxNum),1)
 
 // console.log(getLargest(arr))
+
+//  reverse the array!
+
+let arr = [1, 2, 3, 4, 5];
+
+function reverseArr(arr) {
+  let reversedArr = [];
+  for (let i = arr.length - 1; i >= 0; --i) {
+    reversedArr.push(arr[i]);
+  }
+  return reversedArr;
+}
+
+console.log(reverseArr(arr));
