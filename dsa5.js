@@ -65,14 +65,32 @@ const prompt = require("prompt-sync")();
 
 //  reverse the array!
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
-function reverseArr(arr) {
-  let reversedArr = [];
-  for (let i = arr.length - 1; i >= 0; --i) {
-    reversedArr.push(arr[i]);
+// function reverseArr(arr) {
+//   let reversedArr = [];
+//   for (let i = arr.length - 1; i >= 0; --i) {
+//     reversedArr.push(arr[i]);
+//   }
+//   return reversedArr;
+// }
+
+// console.log(reverseArr(arr));
+
+
+// 0 to left and 1 to right!
+
+let arr = [0, 1,0,1,0,1,0,1,0,1];
+function leftRight(arr) {
+  let newArr = []
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] === 0){
+      newArr.unshift(arr[i])
+    }else if(arr[i] === 1){
+      newArr.push(arr[i])
+    }
   }
-  return reversedArr;
+  return newArr
 }
 
-console.log(reverseArr(arr));
+console.log(leftRight(arr))
