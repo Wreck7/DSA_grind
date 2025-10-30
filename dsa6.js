@@ -1,6 +1,5 @@
 const prompt = require("prompt-sync")();
 
-
 // every character in a new line!
 
 // let str = prompt('enter a string: ')
@@ -8,7 +7,6 @@ const prompt = require("prompt-sync")();
 // for (let i = 0; i < str.length; i++) {
 //     console.log(str[i])
 // }
-
 
 // reverse a the string!
 
@@ -21,5 +19,12 @@ const prompt = require("prompt-sync")();
 
 // console.log(revStr)
 
+// palindrome or not!
 
+let str = prompt("enter a string: ");
 
+function revStr(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(revStr(str) === str ? "Palindrome" : " not a Palindrome")
