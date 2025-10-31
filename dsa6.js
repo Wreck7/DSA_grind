@@ -19,12 +19,36 @@ const prompt = require("prompt-sync")();
 
 // console.log(revStr)
 
+
+
+
 // palindrome or not!
 
-let str = prompt("enter a string: ");
+// let str = prompt("enter a string: ");
 
-function revStr(str) {
-  return str.split("").reverse().join("");
+// function revStr(str) {
+//   return str.split("").reverse().join("");
+// }
+
+// console.log(revStr(str) === str ? "Palindrome" : " not a Palindrome")
+
+
+
+// toggle case!
+
+let str = "HeLLo WoRLd";
+let toggled = "";
+
+for (let i = 0; i < str.length; i++) {
+  let ch = str[i];
+  
+  if (ch >= 'a' && ch <= 'z') {
+    toggled += ch.toUpperCase();   // lowercase → uppercase
+  } else if (ch >= 'A' && ch <= 'Z') {
+    toggled += ch.toLowerCase();   // uppercase → lowercase
+  } else {
+    toggled += ch; // keep spaces, numbers, symbols same
+  }
 }
 
-console.log(revStr(str) === str ? "Palindrome" : " not a Palindrome")
+console.log(toggled);
