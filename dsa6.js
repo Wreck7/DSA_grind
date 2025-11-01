@@ -36,19 +36,39 @@ const prompt = require("prompt-sync")();
 
 // toggle case!
 
-let str = "HeLLo WoRLd";
-let toggled = "";
+// let str = "HeLLo WoRLd";
+// let toggled = "";
 
-for (let i = 0; i < str.length; i++) {
-  let ch = str[i];
+// for (let i = 0; i < str.length; i++) {
+//   let ch = str[i];
   
-  if (ch >= 'a' && ch <= 'z') {
-    toggled += ch.toUpperCase();   // lowercase → uppercase
-  } else if (ch >= 'A' && ch <= 'Z') {
-    toggled += ch.toLowerCase();   // uppercase → lowercase
-  } else {
-    toggled += ch; // keep spaces, numbers, symbols same
+//   if (ch >= 'a' && ch <= 'z') {
+//     toggled += ch.toUpperCase();   // lowercase → uppercase
+//   } else if (ch >= 'A' && ch <= 'Z') {
+//     toggled += ch.toLowerCase();   // uppercase → lowercase
+//   } else {
+//     toggled += ch; // keep spaces, numbers, symbols same
+//   }
+// }
+
+// console.log(toggled);
+
+
+
+
+// count of the each character!
+
+
+let str = prompt('enter a string: ')
+// let str = 'vishwa cheeze'
+let freq = {};
+
+for (let char of str) {
+  if (char !== " ") { // optional: ignore spaces
+    freq[char] = (freq[char] || 0) + 1;
   }
 }
 
-console.log(toggled);
+console.log(freq);
+
+
