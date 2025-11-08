@@ -59,16 +59,16 @@ const prompt = require("prompt-sync")();
 // count of the each character!
 
 
-let str = prompt('enter a string: ')
-// let str = 'vishwa cheeze'
-let freq = {};
+// let str = prompt('enter a string: ')
+// // let str = 'vishwa cheeze'
+// let freq = {};
 
-for (let char of str) {
-  if (char !== " ") { // optional: ignore spaces
-    freq[char] = (freq[char] || 0) + 1;
-  }
-}
+// for (let char of str) {
+//   if (char !== " ") { // optional: ignore spaces
+//     freq[char] = (freq[char] || 0) + 1;
+//   }
+// }
 
-console.log(freq);
+// console.log(freq);
 
 
