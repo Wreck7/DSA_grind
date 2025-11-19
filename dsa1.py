@@ -28,13 +28,26 @@
 
 import math
 
-a = float(input("Enter side a of the triangle: "))
-b = float(input("Enter side b of the triangle: "))
-c = float(input("Enter side c of the triangle: "))
+# a = float(input("Enter side a of the triangle: "))
+# b = float(input("Enter side b of the triangle: "))
+# c = float(input("Enter side c of the triangle: "))
 
-def calculate_area(a, b, c):
-    s = (a + b + c) / 2
-    area = math.sqrt(s * (s - a) * (s - b) * (s - c))
-    return area
+# def calculate_area(a, b, c):
+#     s = (a + b + c) / 2
+#     area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+#     return area
 
-print(calculate_area(a, b, c))
+# print(calculate_area(a, b, c))
+
+
+
+
+# circumference of the circle
+
+r = float(input("Enter radius of the circle: "))
+
+def calculate_circumference(r):
+    circumference = 2 * 3.141592653589793 * r
+    return circumference
+
+print(calculate_circumference(r))
