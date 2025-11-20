@@ -44,10 +44,10 @@ import math
 
 # circumference of the circle
 
-r = float(input("Enter radius of the circle: "))
+# r = float(input("Enter radius of the circle: "))
 
-def calculate_circumference(r):
-    circumference = 2 * 3.141592653589793 * r
-    return circumference
+# def calculate_circumference(r):
+#     circumference = 2 * 3.141592653589793 * r
+#     return circumference
 
-print(calculate_circumference(r))
+# print(calculate_circumference(r))
