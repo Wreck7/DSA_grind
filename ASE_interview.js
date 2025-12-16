@@ -83,13 +83,76 @@
 
 // reversing a array with loops
 
-const arr = [1,2,3,4,5,6,7]
-const reverseArr = (arr) =>{
-    let newArr = []
-    for(let i = arr.length -1; i>=0; i--){
-        newArr.push(arr[i])
-    }
-    return newArr
-}
+// const arr = [1,2,3,4,5,6,7]
+// const reverseArr = (arr) =>{
+//     let newArr = []
+//     for(let i = arr.length -1; i>=0; i--){
+//         newArr.push(arr[i])
+//     }
+//     return newArr
+// }
 
-console.log(reverseArr(arr))
+// console.log(reverseArr(arr))
+
+
+
+// palindrome string 
+
+// const isPalindrome = (str) => {
+//     const reverseStr = str.split('').reverse().join("")
+//     return str === reverseStr
+// }
+
+// console.log(isPalindrome('racecar'))
+
+
+
+
+// find the largest element in array
+
+// const arr = [1,2,35,4,32,99,5]
+
+// const findLargest = (arr) =>{
+//     let largest = arr[0]
+//     for(let i = 1; i<=arr.length - 1;i++){
+//         if(arr[i] > largest){
+//             largest = arr[i]
+//         }
+//     }
+//     return largest
+// } 
+
+// console.log(`the largest number in the array is ${findLargest(arr)}`)
+
+
+
+// Count frequency of characters in string
+
+
+// const str = 'vishwaGovula'
+
+// const charFrequency = (str) =>{
+//     const frequency = {}
+//     for(let char of str.toLowerCase()){
+//         frequency[char] = (frequency[char] || 0) + 1
+//     }
+//     return frequency
+// }
+
+// console.log(charFrequency(str))
+
+
+// Count frequency of elements in array
+
+// const arr = [1,2,33,1,2,346,6,21,1,2,2,3]
+
+// const elementFrequency = (arr) =>{
+//     const frequency = {}
+//     for(let ele of arr){
+//         frequency[ele] = (frequency[ele] || 0) + 1
+//     }
+//     return frequency
+// }
+
+
+// console.log(elementFrequency(arr))
