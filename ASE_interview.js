@@ -159,7 +159,7 @@
 
 
 
-// find duplicates in a array
+// find duplicates in a array!
 
 const arr = [1,2,33,1,2,346,6,21,1,2,2,3]
 
