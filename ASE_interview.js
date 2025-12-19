@@ -161,20 +161,20 @@
 
 // find duplicates in a array!
 
-const arr = [1,2,33,1,2,346,6,21,1,2,2,3]
+// const arr = [1,2,33,1,2,346,6,21,1,2,2,3]
 
-function fetchingDuplicates(arr) {
-    const seen = new Set();
-    const duplicates = new Set();
+// function fetchingDuplicates(arr) {
+//     const seen = new Set();
+//     const duplicates = new Set();
 
-    for (const ele of arr) {
-        if (seen.has(ele)) {
-            duplicates.add(ele)
-        } else {
-            seen.add(ele)
-        }
-    }
-    return Array.from(duplicates)
-}
+//     for (const ele of arr) {
+//         if (seen.has(ele)) {
+//             duplicates.add(ele)
+//         } else {
+//             seen.add(ele)
+//         }
+//     }
+//     return Array.from(duplicates)
+// }
 
-console.log(fetchingDuplicates(arr))
+// console.log(fetchingDuplicates(arr))
