@@ -178,3 +178,18 @@
 // }
 
 // console.log(fetchingDuplicates(arr))
+
+
+
+// anagram 
+
+let str1 = "listen"
+let str2 = "silent"
+
+function checkAnagram(str1, str2) {
+    let sortedStr1 = [...str1].sort()
+    let sortedStr2 = [...str2].sort()
+    return sortedStr1.join('') === sortedStr2.join('')
+}
+
+console.log(checkAnagram(str1, str2))
