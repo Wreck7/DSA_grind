@@ -13,7 +13,6 @@
 
 // console.log(isPrime(31))
 
-
 // method2
 
 // function isPrime(n) {
@@ -26,7 +25,7 @@
 //     if (n === 2 || n === 3) {
 //         return true;
 //     }
-    
+
 //     // Step 3: If number is divisible by 2 or 3, it's NOT prime
 //     if (n % 2 === 0 || n % 3 === 0) {
 //         return false;
@@ -46,7 +45,6 @@
 // }
 // console.log(isPrime(31))
 
-
 // reversing a string
 
 // function reverseStr(word) {
@@ -54,7 +52,6 @@
 // }
 
 // console.log(reverseStr('hello'))
-
 
 // reversing a array
 
@@ -64,9 +61,6 @@
 // }
 
 // console.log(reverseArr(arr))
-
-
-
 
 // reversing a string with loops
 
@@ -79,7 +73,6 @@
 // }
 
 // console.log(reverseStr('vishwa'))
-
 
 // reversing a array with loops
 
@@ -94,9 +87,7 @@
 
 // console.log(reverseArr(arr))
 
-
-
-// palindrome string 
+// palindrome string
 
 // const isPalindrome = (str) => {
 //     const reverseStr = str.split('').reverse().join("")
@@ -104,9 +95,6 @@
 // }
 
 // console.log(isPalindrome('racecar'))
-
-
-
 
 // find the largest element in array
 
@@ -120,14 +108,11 @@
 //         }
 //     }
 //     return largest
-// } 
+// }
 
 // console.log(`the largest number in the array is ${findLargest(arr)}`)
 
-
-
 // Count frequency of characters in string
-
 
 // const str = 'vishwaGovula'
 
@@ -141,7 +126,6 @@
 
 // console.log(charFrequency(str))
 
-
 // Count frequency of elements in array
 
 // const arr = [1,2,33,1,2,346,6,21,1,2,2,3]
@@ -154,10 +138,7 @@
 //     return frequency
 // }
 
-
 // console.log(elementFrequency(arr))
-
-
 
 // find duplicates in a array!
 
@@ -179,17 +160,29 @@
 
 // console.log(fetchingDuplicates(arr))
 
+// anagram
 
+// let str1 = "listen"
+// let str2 = "silent"
 
-// anagram 
+// function checkAnagram(str1, str2) {
+//     let sortedStr1 = [...str1].sort()
+//     let sortedStr2 = [...str2].sort()
+//     return sortedStr1.join('') === sortedStr2.join('')
+// }
 
-let str1 = "listen"
-let str2 = "silent"
+// console.log(checkAnagram(str1, str2))
 
-function checkAnagram(str1, str2) {
-    let sortedStr1 = [...str1].sort()
-    let sortedStr2 = [...str2].sort()
-    return sortedStr1.join('') === sortedStr2.join('')
+function fibonacciSeries(n) {
+  if (n <= 0) return [];
+  if (n === 1) return [0];
+
+  const fib = [0, 1];
+
+  for (let i = 2; i < n; i++) {
+    fib.push(fib[i - 1] + fib[i - 2]);
+  }
+
+  return fib;
 }
-
-console.log(checkAnagram(str1, str2))
+console.log(fibonacciSeries(10));
