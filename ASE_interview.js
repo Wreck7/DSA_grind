@@ -173,16 +173,30 @@
 
 // console.log(checkAnagram(str1, str2))
 
-function fibonacciSeries(n) {
-  if (n <= 0) return [];
-  if (n === 1) return [0];
+// function fibonacciSeries(n) {
+//   if (n <= 0) return [];
+//   if (n === 1) return [0];
 
-  const fib = [0, 1];
+//   const fib = [0, 1];
 
-  for (let i = 2; i < n; i++) {
-    fib.push(fib[i - 1] + fib[i - 2]);
-  }
+//   for (let i = 2; i < n; i++) {
+//     fib.push(fib[i - 1] + fib[i - 2]);
+//   }
 
-  return fib;
+//   return fib;
+// }
+// console.log(fibonacciSeries(10));
+
+
+
+
+
+const numbersWithDuplicates = [5, 2, 8, 8, 1, 9, 9];
+
+function findSecondLargestConcise(arr) {
+  const uniqueNumbers = [...new Set(arr)];
+  uniqueNumbers.sort((a, b) => b - a);
+  return uniqueNumbers.length >= 2 ? uniqueNumbers[1] : "No second largest element";
 }
-console.log(fibonacciSeries(10));
+
+console.log(findSecondLargestConcise(numbersWithDuplicates));
