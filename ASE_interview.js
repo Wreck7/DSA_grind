@@ -191,12 +191,12 @@
 
 
 
-const numbersWithDuplicates = [5, 2, 8, 8, 1, 9, 9];
+// const numbersWithDuplicates = [5, 2, 8, 8, 1, 9, 9];
 
-function findSecondLargestConcise(arr) {
-  const uniqueNumbers = [...new Set(arr)];
-  uniqueNumbers.sort((a, b) => b - a);
-  return uniqueNumbers.length >= 2 ? uniqueNumbers[1] : "No second largest element";
-}
+// function findSecondLargestConcise(arr) {
+//   const uniqueNumbers = [...new Set(arr)];
+//   uniqueNumbers.sort((a, b) => b - a);
+//   return uniqueNumbers.length >= 2 ? uniqueNumbers[1] : "No second largest element";
+// }
 
-console.log(findSecondLargestConcise(numbersWithDuplicates));
+// console.log(findSecondLargestConcise(numbersWithDuplicates));
