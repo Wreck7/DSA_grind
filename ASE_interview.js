@@ -234,3 +234,24 @@
 // }
 
 // console.log(intersection([1, 2, 3, 4], [3, 4, 5, 6]));
+
+
+
+// find first repeating element in an array
+
+const arr = [1,2,3,4,54,11,3,4,2,1]
+
+function findFirstRepeatingElement(arr) {
+    let seen = new Set()
+
+    for (let i = 0; i < arr.length; i++) {
+        if(seen.has(arr[i])){
+            return arr[i]
+        }else{
+            seen.add(arr[i])
+        }
+    }
+    return null
+}
+
+console.log(findFirstRepeatingElement(arr))
