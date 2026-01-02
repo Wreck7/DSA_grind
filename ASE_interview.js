@@ -187,10 +187,6 @@
 // }
 // console.log(fibonacciSeries(10));
 
-
-
-
-
 // const numbersWithDuplicates = [5, 2, 8, 8, 1, 9, 9];
 
 // function findSecondLargestConcise(arr) {
@@ -200,10 +196,6 @@
 // }
 
 // console.log(findSecondLargestConcise(numbersWithDuplicates));
-
-
-
-
 
 // function moveZeros(arr) {
 //   let index = 0;
@@ -223,10 +215,7 @@
 //   return arr;
 // }
 
-
 // console.log(moveZeros([0, 1, 0, 3, 12]));
-
-
 
 // function intersection(arr1, arr2) {
 //   const set2 = new Set(arr2);
@@ -235,23 +224,45 @@
 
 // console.log(intersection([1, 2, 3, 4], [3, 4, 5, 6]));
 
-
-
 // find first repeating element in an array
 
-const arr = [1,2,3,4,54,11,3,4,2,1]
+// const arr = [1,2,3,4,54,11,3,4,2,1]
 
-function findFirstRepeatingElement(arr) {
-    let seen = new Set()
+// function findFirstRepeatingElement(arr) {
+//     let seen = new Set()
 
-    for (let i = 0; i < arr.length; i++) {
-        if(seen.has(arr[i])){
-            return arr[i]
-        }else{
-            seen.add(arr[i])
-        }
+//     for (let i = 0; i < arr.length; i++) {
+//         if(seen.has(arr[i])){
+//             return arr[i]
+//         }else{
+//             seen.add(arr[i])
+//         }
+//     }
+//     return null
+// }
+
+// console.log(findFirstRepeatingElement(arr))
+
+
+
+
+// find first non-repeating element in an array
+
+function firstNonRepeating(arr) {
+  const freq = {};
+
+  for (let num of arr) {
+    freq[num] = (freq[num] || 0) + 1;
+  }
+
+  for (let num of arr) {
+    if (freq[num] === 1) {
+      return num;
     }
-    return null
+  }
+
+  return null;
 }
 
-console.log(findFirstRepeatingElement(arr))
+const arr = [1, 2, 3, 4, 2, 1, 3];
+console.log(firstNonRepeating(arr)); // 4
