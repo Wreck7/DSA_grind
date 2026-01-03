@@ -248,21 +248,25 @@
 
 // find first non-repeating element in an array
 
-function firstNonRepeating(arr) {
-  const freq = {};
+// function firstNonRepeating(arr) {
+//   const freq = {};
 
-  for (let num of arr) {
-    freq[num] = (freq[num] || 0) + 1;
-  }
+//   for (let num of arr) {
+//     freq[num] = (freq[num] || 0) + 1;
+//   }
 
-  for (let num of arr) {
-    if (freq[num] === 1) {
-      return num;
-    }
-  }
+//   for (let num of arr) {
+//     if (freq[num] === 1) {
+//       return num;
+//     }
+//   }
 
-  return null;
-}
+//   return null;
+// }
 
-const arr = [1, 2, 3, 4, 2, 1, 3];
-console.log(firstNonRepeating(arr)); // 4
+// const arr = [1, 2, 3, 4, 2, 1, 3];
+// console.log(firstNonRepeating(arr));
+
+
+
+
