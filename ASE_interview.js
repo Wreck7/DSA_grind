@@ -243,9 +243,6 @@
 
 // console.log(findFirstRepeatingElement(arr))
 
-
-
-
 // find first non-repeating element in an array
 
 // function firstNonRepeating(arr) {
@@ -267,6 +264,15 @@
 // const arr = [1, 2, 3, 4, 2, 1, 3];
 // console.log(firstNonRepeating(arr));
 
+// Check if array is sorted
 
+function isSorted(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < arr[i - 1]) {
+      return false;
+    }
+  }
+  return true;
+}
 
-
+console.log(isSorted([1, 2, 3, 4]));
