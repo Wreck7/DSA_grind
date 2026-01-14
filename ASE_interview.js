@@ -11,7 +11,7 @@
 //     return true;
 // }
 
-// console.log(isPrime(31))
+// console.log(isPrime(53))
 
 // method2
 
