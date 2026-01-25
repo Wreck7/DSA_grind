@@ -43,7 +43,7 @@
 //     // Step 5: If no divisor found, number is prime
 //     return true;
 // }
-// console.log(isPrime(53))
+// console.log(isPrime(51))
 
 // reversing a string
 
